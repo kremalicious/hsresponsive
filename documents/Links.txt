@@ -1,0 +1,23 @@
+
+# Responsive Web Design Examples
+http://bostonglobe.com
+http://elliotjaystocks.com/
+http://ipp-halle.de/
+
+
+# CSS3 Web Tools
+
+Ultimate CSS Gradient Generator
+http://www.colorzilla.com/gradient-editor/
+
+Layerstyles
+http://www.layerstyles.org/
+
+Prefixr
+http://prefixr.com/
+
+
+# Libraries
+
+Modernizr
+http://www.modernizr.com/

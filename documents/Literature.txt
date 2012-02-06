@@ -1,0 +1,29 @@
+
+# Web Design
+
+
+## Books
+
+A Book Apart Library
+http://www.abookapart.com/products/complete-library
+
+Lawson, Bruce: Introducing HTML5
+http://introducinghtml5.com/
+
+
+## Articles
+
+A List Apart: Responsive Web Design
+http://www.alistapart.com/articles/responsive-web-design/
+
+Mozilla Dev: Using the viewport meta tag to control layout on mobile browsers
+https://developer.mozilla.org/en/Mobile/Viewport_meta_tag
+
+Stocks, Elliot Jay: A Better Photoshop Grid For Responsive Web Design
+http://elliotjaystocks.com/blog/a-better-photoshop-grid-for-responsive-web-design/
+
+
+# Server Admin
+
+How to Set Up a Killer WordPress Testing Environment Locally
+http://net.tutsplus.com/tutorials/wordpress/how-to-set-up-a-killer-wordpress-testing-environment-locally/
