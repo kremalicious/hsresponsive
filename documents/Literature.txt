@@ -20,6 +20,7 @@ http://www.fivesimplesteps.com/products/a-practical-guide-to-designing-for-the-w
 Zeldman, Jeffrey: Designing with Web Standards: 3rd Edition
 http://www.zeldman.com/dwws/
 
+
 ## Articles
 
 A List Apart: Responsive Web Design
@@ -27,6 +28,9 @@ http://www.alistapart.com/articles/responsive-web-design/
 
 Mozilla Dev: Using the viewport meta tag to control layout on mobile browsers
 https://developer.mozilla.org/en/Mobile/Viewport_meta_tag
+
+Smith, Grace: Redesign your portfolio site in 10 easy steps
+http://www.netmagazine.com/node/1437
 
 Stocks, Elliot Jay: A Better Photoshop Grid For Responsive Web Design
 http://elliotjaystocks.com/blog/a-better-photoshop-grid-for-responsive-web-design/
