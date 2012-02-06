@@ -10,6 +10,15 @@ http://www.abookapart.com/products/complete-library
 Lawson, Bruce: Introducing HTML5
 http://introducinghtml5.com/
 
+Boulton, Mark: A Practical Guide to Designing for the Web
+http://www.fivesimplesteps.com/products/a-practical-guide-to-designing-for-the-web
+
+	BONUS
+	Mills, Robert: A Practical Guide to Designing the Invisible
+	http://www.fivesimplesteps.com/products/a-practical-guide-to-designing-the-invisible
+
+Zeldman, Jeffrey: Designing with Web Standards: 3rd Edition
+http://www.zeldman.com/dwws/
 
 ## Articles
 
