@@ -14,14 +14,26 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
+/* Vertical Rhythm Tool
+   http://drewish.com/tools/vertical-rhythm */
 h1 {
+	font-size: 2.25em; /* 36px */
+	line-height: 1.2222em; /* 44px */
+	margin-top: 0.6111em;
+	margin-bottom: 0em;
+}
+h2 { 
+	font-size: 2em; /* 32px */
+	line-height: 1.375em; /* 44px */
+	margin-top: 0.6875em;
+	margin-bottom: 0em;
+}
+h3 {
 	font-size: 1.5em; /* 24px */
 	line-height: 1.8333em; /* 44px */
 	margin-top: 0.9167em;
 	margin-bottom: 0em;
 }
-h2 { }
-h3 { }
 h4 { }
 h5 { }
 h6 { }
@@ -39,7 +51,13 @@ ul.unstyled {
 /*   320px and up */
 /*  ============================================================== */
 
-
+section > header h1,
+aside > header h1,
+footer > header h1 {
+	border-bottom: 1px dashed #ccc;
+	margin-top: 0;
+	color: #ccc;
+}
 
 
 
