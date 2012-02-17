@@ -56,10 +56,10 @@ img, svg, video, audio, embed, object {
 }
 
 
-/*   768px and up */
+/*   600px and up */
 /*  ============================================================== */
-@media only screen and (min-width: 768px) {
-
+@media only screen and (min-width:600px) {
+  	
 	.container {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -85,9 +85,9 @@ img, svg, video, audio, embed, object {
 	.row .col1:last-child, .row .col2:last-child, .row .col3:last-child, .row .col4:last-child, .row .col5:last-child, .row .col6 { margin-right: 0; }
 	
 	.row .col1 { width: 15%; }
-		.row .col1:last-child {	width: 17%; } /* abgezogene 2% margin auf Breite hinzufügen */
 	.row .col2 { width: 32%; }
 		.row .col2:last-child {	width: 34%; }
+		.row .col2:nth-child(3) { width: 32%;  }
 	.row .col3 { width: 49%; }
 		/*.row .col3:last-child {	width: 51%; }*/
 	.row .col4 { width: 64%; }
@@ -95,6 +95,15 @@ img, svg, video, audio, embed, object {
 	.row .col5 { width: 81%; }
 		.row .col5:last-child {	width: 83%; }
 	.row .col6 { width: 100%; }
+	
+}
+
+
+/*   768px and up */
+/*  ============================================================== */
+@media only screen and (min-width: 768px) {
+
+	
 
 }
 

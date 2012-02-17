@@ -1,0 +1,42 @@
+.container { 
+	border-bottom: 1px solid #fff; border-top: 1px solid #bbb;
+	background: #f2f9fe;
+	background: -moz-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f9fe), color-stop(100%,#d6f0fd));
+	background: -webkit-linear-gradient(top, #f2f9fe 0%,#d6f0fd 100%);
+	background: -o-linear-gradient(top, #f2f9fe 0%,#d6f0fd 100%);
+	background: -ms-linear-gradient(top, #f2f9fe 0%,#d6f0fd 100%);
+	background: linear-gradient(top, #f2f9fe 0%,#d6f0fd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=0 );
+	margin-bottom: 0;
+	padding: 1em 0;
+}
+.row { background: none; }
+.col1, .col2, .col3, .col4, .col5, .col6 { background: none; }
+
+
+h1, h2, h3, h4, h5, h6, header[role="banner"] p {
+	color: #203746;
+}
+
+.sectionTitle {
+	border-bottom: 1px solid #203746;
+	border-top: 1px solid #203746;
+}
+
+#theGrid p {
+	background: #fff;
+	background: rgba(255,255,255,.5);
+	padding: 2% 1%;
+	border-bottom: 1px solid #bbb;
+	
+	-webkit-transition: background .3s ease-in-out 0s;
+	-moz-transition: background .3s ease-in-out 0s;
+	-o-transition: background .3s ease-in-out 0s;
+	-ms-transition: background .3s ease-in-out 0s;
+	transition: background .3s ease-in-out 0s;
+}
+
+	#theGrid p:hover {
+		background: rgba(255,255,255,.8);
+	}
