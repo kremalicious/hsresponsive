@@ -6,6 +6,7 @@
 body {
 	font: 16px/22px Georgia, "Times New Roman", Times, serif;
 	color: #444;
+	padding-top: 1%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +29,11 @@ h6 { }
 a, a:visited { }
 a:hover { }
 a:active { }
+
+ul.unstyled {
+	list-style: none;
+	padding-left: 0;
+}
 
 
 /*   320px and up */

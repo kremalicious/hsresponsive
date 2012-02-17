@@ -12,6 +12,7 @@ body {
 }
 
 /*debug colors*/
+.container { border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; }
 .row { background: #ccc; }
 .col1, .col2, .col3, .col4, .col5, .col6 { background: #f7f7f7; }
 
@@ -42,6 +43,8 @@ body {
 img, svg, video, audio, embed, object {
 	max-width: 100%;	/* nie breiter als umschließende Spalte */
 	height: auto;		/* ermöglicht proportionale Skalierung */
+	margin: 0 auto;		/* immer innerhalb der Spalte zentrieren */
+	display: block;		/* benötigt damit Zentrierung funktioniert */
 }
 
 
@@ -61,6 +64,7 @@ img, svg, video, audio, embed, object {
 		padding-left: 20px;
 		padding-right: 20px;
 		width: auto;
+		margin-bottom: 2em;
 	}
 	
 	.row {
@@ -74,17 +78,22 @@ img, svg, video, audio, embed, object {
 		float: left;
 		margin: 0 2% 2% 0;
 		min-height: 1px;
-		padding-left: 2%;
-		padding-right: 2%;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	
-	.row .col1:last-child, .row .col2:last-child, .row .col3:last-child, .row .col4:last-child, .row .col5:last-child, .row .col6:last-child, .row .col6 { margin-right: 0; }
+	.row .col1:last-child, .row .col2:last-child, .row .col3:last-child, .row .col4:last-child, .row .col5:last-child, .row .col6 { margin-right: 0; }
 	
 	.row .col1 { width: 15%; }
+		.row .col1:last-child {	width: 17%; } /* abgezogene 2% margin auf Breite hinzufügen */
 	.row .col2 { width: 32%; }
+		.row .col2:last-child {	width: 34%; }
 	.row .col3 { width: 49%; }
+		/*.row .col3:last-child {	width: 51%; }*/
 	.row .col4 { width: 64%; }
+		.row .col4:last-child {	width: 66%; }
 	.row .col5 { width: 81%; }
+		.row .col5:last-child {	width: 83%; }
 	.row .col6 { width: 100%; }
 
 }
