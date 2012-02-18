@@ -20,6 +20,7 @@
 
 .container {
 	padding: 0 2%; 		/*immer 20px/1000px Abstand zum Inhalt */
+	width: 100%;
 	margin: 1% auto;
 }
 
