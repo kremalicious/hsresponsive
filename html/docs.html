@@ -10,8 +10,8 @@
 	<link rel="stylesheet" href="assets/grid.css">
 	
 	<link href='http://fonts.googleapis.com/css?family=Share:700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="assets/docs.css">
 	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/docs.css">
 	
 </head>
 <body>
@@ -19,9 +19,9 @@
 	<div class="container">
 		<div class="row">
 			
-			<header role="banner">
-				<h1 class="col2">HS Fluid</h1>
-				<p class="col4">Basic responsive web design framework &amp; templates for students of Medieninformatik at the Hochschule Harz</p>
+			<header role="banner" class="clearfix">
+				<h1 class="col3">HS Responsive</h1>
+				<p class="col9">Basic responsive web design framework &amp; templates for students of Medieninformatik at the Hochschule Harz</p>
 			</header>
 			
 		</div>
@@ -30,19 +30,24 @@
 	<div class="container">
 		<div class="row">
 			
-			<article class="col3">
+			<article class="col6">
 				<h1>Markup</h1>
-				<pre><code>
-&lt;div class=&quot;container&quot;&gt;
+				
+<pre><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col6&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;col6&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
   &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col3&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;col3&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;col3&quot;&gt;...&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-				</code></pre>
+&lt;/div&gt;</code></pre>
+				
 			</article>
 			
-			<article class="col3">
+			<article class="col6">
 				<h1>Markup</h1>
 			</article>
 			
@@ -53,7 +58,7 @@
 			
 		<article id="theGrid">
 			<div class="row">
-				<header class="col6">
+				<header class="col12">
 					<h1 class="sectionTitle">The Grid</h1>
 				</header>
 			</div>
@@ -64,19 +69,37 @@
 				<p class="col1">.col1</p>
 				<p class="col1">.col1</p>
 				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
 			</div>
 			<div class="row">
 				<p class="col2">.col2</p>
 				<p class="col2">.col2</p>
 				<p class="col2">.col2</p>
+				<p class="col2">.col2</p>
+				<p class="col2">.col2</p>
+				<p class="col2">.col2</p>
 			</div>
 			<div class="row">
+				<p class="col3">.col3</p>
+				<p class="col3">.col3</p>
 				<p class="col3">.col3</p>
 				<p class="col3">.col3</p>
 			</div>
 			<div class="row">
 				<p class="col4">.col4</p>
-				<p class="col2">.col2</p>
+				<p class="col4">.col4</p>
+				<p class="col4">.col4</p>
+			</div>
+			<div class="row">
+				<p class="col1">.col1</p>
+				<p class="col5">.col5</p>
+				<p class="col5">.col5</p>
+				<p class="col1">.col1</p>
 			</div>
 			<div class="row">
 				<p class="col2">.col2</p>
@@ -84,6 +107,18 @@
 			</div>
 			<div class="row">
 				<p class="col6">.col6</p>
+				<p class="col6">.col6</p>
+			</div>
+			<div class="row">
+				<p class="col5">.col5</p>
+				<p class="col7">.col7</p>
+			</div>
+			<div class="row">
+				<p class="col6">.col6</p>
+			</div>
+			
+			<div class="row">
+				<p class="col12">.col12</p>
 			</div>
 		</article>
 		
@@ -91,19 +126,19 @@
 
 	<div class="container">
 		<div class="row">
-			<header class="col6">
+			<header class="col12">
 				<h1 class="sectionTitle">Embedded Media</h1>
 			</header>
 		</div>
 		<div class="row">
 			
-			<article class="col6">
+			<article class="col12">
 				<ul class="unstyled">
-					<li class="col3">
+					<li class="col6">
 						<img src="http://placekitten.com/490/200" />
 						<p>Put a bird on it retro vinyl odd future, fap williamsburg banh mi freegan aesthetic mcsweeney's tofu hella leggings next level. Cardigan helvetica small batch, brooklyn bespoke stumptown fingerstache synth letterpress cray selvage. Shoreditch mcsweeney's flexitarian, narwhal mlkshk DIY bespoke squid leggings tattooed cosby sweater letterpress small batch retro.</p>
 					</li>
-					<li class="col3">
+					<li class="col6">
 						<img src="http://placekitten.com/490/200" />
 						<p>Tofu hoodie iphone cardigan readymade craft beer sartorial swag artisan williamsburg, pickled fingerstache chillwave tumblr mixtape. VHS wolf fixie portland blog skateboard. Banksy ethnic stumptown shoreditch +1, hoodie before they sold out yr polaroid dreamcatcher.</p>
 					</li>
@@ -115,12 +150,12 @@
 	
 	<div class="container">
 		<div class="row">
-			<header class="col6">
+			<header class="col12">
 				<h1 class="sectionTitle">Starter Template</h1>
 			</header>
 		</div>
 		<div class="row">
-			<section role="main" class="col4">
+			<section role="main" class="col8">
 				<header>
 					<h1>Content</h1>
 				</header>
@@ -136,7 +171,7 @@
 			
 			</section>
 			
-			<aside role="complementary" class="col2">
+			<aside role="complementary" class="col4">
 				<header>
 					<h1>Sidebar</h1>
 				</header>
@@ -148,7 +183,7 @@
 	<div class="container">
 		<div class="row">
 			
-			<footer class="col6">
+			<footer class="col12">
 				<small>© Do you need some text for your website or whatever? *sigh* Okay…</small>
 			</footer>
 		
