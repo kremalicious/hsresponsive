@@ -25,3 +25,6 @@ http://drewish.com/tools/vertical-rhythm
 
 Modernizr
 http://www.modernizr.com/
+
+FlexSlider
+http://flex.madebymufffin.com/

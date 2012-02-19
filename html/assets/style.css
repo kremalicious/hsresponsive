@@ -58,6 +58,9 @@ p, ul, ol, img, pre {
 	margin-top: 0;
 }
 
+.flexslider { margin-bottom: 30px; }
+.flexslider img { margin-bottom: 0; }
+
 ul.unstyled {
 	list-style: none;
 	padding-left: 0;
