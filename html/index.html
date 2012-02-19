@@ -11,6 +11,7 @@
 	
 	<link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/flexslider.css">
+	<link rel="stylesheet" href="assets/js/libs/google-code-prettify/prettify.css">
 	<link rel="stylesheet" href="assets/docs.css">
 	
 </head>
@@ -35,18 +36,25 @@
 		</div>
 		<div class="row">
 			<article class="col6">
-				<h1>HTML Template <a href="template.html">View</a></h1>
-				<p><a class="button" href="#">Download</a></p>
+				<header><h1>HTML/CSS Template <a href="template.html">View</a></h1></header>
+				<p>Includes small website template with basic markup, layout &amp; styles</p>
+				<p><a class="button" href="#">Download HTML/CSS files</a></p>
+				<p><small><em>CSS: only <code>h5bp.css</code> &amp; <code>grid.css</code> are needed for the framework. The content of <code>style.css</code> can be deleted if you want to start real fresh</em></small></p>
 			</article>
 			<article class="col6">
-				<h1>Photoshop Template</h1>
-				<p><a class="button" href="#">Download</a></p>
+				<header><h1>Photoshop Templates</h1></header>
+				<p>Includes 2 grid files for fixed sizes of 1000px (12 Columns) &amp; 500px (2 Columns)</p>
+				<p><a class="button" href="#">Download PSD files</a></p>
 			</article>
 		</div>
 		<div class="row">
 			<article class="col6">
-				<h1>Questions?</h1>
-				<p><a href="#">Send E-Mail</a></p>
+				<header><h1>Documentation</h1></header>
+				<p>All required documentation can be found on this page. It's itself build with the grid framework in use in the HTML/CSS template so it's a live example too.</p>
+			</article>
+			<article class="col6">
+				<header><h1>Questions? Adventurous?</h1></header>
+				<p><a href="#">Send E-Mail</a> or fork this project <a href="https://github.com/kremalicious/medieninformatik">on github</a></p>
 			</article>
 		</div>
 	</div>
@@ -61,7 +69,7 @@
 			
 			<article>
 				
-<pre class="col6"><code>&lt;div class=&quot;container&quot;&gt;
+<pre class="col7"><code class="prettyprint lang-html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col6 grid2-col1&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;col6 grid2-col1&quot;&gt;...&lt;/div&gt;
@@ -73,7 +81,7 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 							
-				<ul class="col6">
+				<ul class="col5">
 					<li><code>.container</code> is always full width</li>
 					<li><code>.row</code> maximum at 1000px, centered</li>
 					<li><code>.col*</code> is the number of columns an element is spanning within the grid</li>
@@ -94,17 +102,17 @@
 		<section class="row">
 			
 			<article class="col3 grid2-col1">
-				<h3>Grid 12</h3>
+				<header><h1>Grid 12</h1></header>
 				<p>The main fluid grid system with 12 flexible columns.</p>
 				<p>In use for viewport sizes <strong>768px and up</strong>.</p>
 			</article>
 			<article class="col3 grid2-col1">
-				<h3>Grid 2</h3>
+				<header><h1>Grid 2</h1></header>
 				<p>The optional fluid grid system with 2 columns.</p>
-				<p>In use for viewport sizes between <strong>480px and up</strong>.</p>
+				<p>In use for viewport sizes between <strong>480px and 768px</strong>.</p>
 			</article>
 			<article class="col6 grid2-col2">
-				<h3>Mix It</h3>
+				<header><h1>Mix It</h1></header>
 				<p>The Grid 2 can be used as an addition to Grid 12. All columns of Grid 12 default to full width columns for viewport sizes under 768px. By using the grid2-col1 or grid-col2 classes you can further control the layout between 480px and 768px.</p>
 			</article>
 			
@@ -113,7 +121,8 @@
 		<article id="theGrid12" class="theGrid">
 			<header class="row">
 				<h1 class="col12">The Grid 12</h1>
-				<p>This grid preview uses both, Grid 12 &amp; Grid 2. At a viewport size of 768px and down Grid 2 kicks in. Both grids become a 1 column layout for viewport sizes of under 480px. Resize your browser window and watch the columns, especially those with two classes.</p>
+				<p>This grid preview uses both, Grid 12 &amp; Grid 2 (just like the above text blocks). At a viewport size of 768px and down Grid 2 kicks in. Both grids become a 1 column layout for viewport sizes of under 480px.</p>
+				<p>Resize your browser window and watch the columns, especially those with two classes.</p>
 			</header>
 			<div class="row">
 				<p class="col1">.col1</p>
@@ -182,6 +191,14 @@
 			</div>
 		</article>
 		
+		<aside>
+			
+			<header class="row">
+				<h1 class="col12">Natural Box Layout Model</h1>
+				<p>All elements have <code>box-sizing:border-box</code> applied to them in the grid css. This way padding can be applied to all columns/elements without affecting the width or height of a column (or any element).</p>
+			</header>
+		</aside>
+		
 	</div>
 	
 
@@ -231,9 +248,9 @@
 		</div>
 		<div class="row">
 			<aside class="col12">
-				<h1>Slider Markup</h1>
+				<header><h1>Slider Markup</h1></header>
 	
-<pre><code>&lt;div class=&quot;flexslider&quot;&gt;
+<pre><code class="prettyprint lang-html">&lt;div class=&quot;flexslider&quot;&gt;
   &lt;ul class=&quot;slides&quot;&gt;
     &lt;li&gt;&lt;img src=&quot;http://placekitten.com/800/400&quot; width=&quot;800px&quot; height=&quot;400px&quot; /&gt;&lt;/li&gt;
     &lt;li&gt;&lt;img src=&quot;http://placekitten.com/800/400&quot; width=&quot;800px&quot; height=&quot;400px&quot; /&gt;&lt;/li&gt;
@@ -241,6 +258,18 @@
 &lt;/div&gt;</code></pre>
 				
 			</aside>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			
+			<div class="row">
+				<header class="col12">
+					<h1 class="sectionTitle">Links &amp; Literature</h1>
+				</header>
+			</div>
+		
 		</div>
 	</div>
 	

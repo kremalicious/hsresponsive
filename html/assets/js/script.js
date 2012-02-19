@@ -9,4 +9,8 @@ $(window).load(function() { // after the DOM has loaded
  		slideshow: false
  	});
  	
+ 	// Initiate Google Code Prettify
+ 	////////////////////////////////////////////////
+ 	prettyPrint();
+ 	
 });
