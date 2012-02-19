@@ -1,6 +1,7 @@
 body {
 	padding-top: 0;
 	color: #737a7e;
+	text-shadow: 0 1px 0 #000;
 }
 
 .container { 
