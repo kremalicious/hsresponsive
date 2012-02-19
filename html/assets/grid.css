@@ -83,7 +83,15 @@ html[xmlns] .slides {display: block;}
 /*  ============================================================== */
 @media only screen and (min-width: 480px) {
 	
-
+	.grid2-col1, .grid2-col2 {
+		float: left;
+		margin-left: 2%; }
+	
+	.grid2-col1:first-child, .grid2-col1:nth-child(2n+1), .grid2-col2  { margin-left: 0; }
+	
+	.grid2-col1 { width: 49%; }		/* 245px/500px */
+	.grid2-col2 { width: 100%; margin-left: 0; }
+	
 }
 
 
@@ -98,7 +106,8 @@ html[xmlns] .slides {display: block;}
 	    padding-right: 0;
 	}
 	
-	.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+	.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12,
+	.grid2-col1:first-child, .grid2-col1:nth-child(2n+1), .grid2-col2 {
 		float: left;
 		margin-left: 2%;
 	}

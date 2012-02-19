@@ -11,7 +11,6 @@
 	
 	<link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/flexslider.css">
-	<link rel="stylesheet" href="assets/style.css">
 	<link rel="stylesheet" href="assets/docs.css">
 	
 </head>
@@ -64,8 +63,8 @@
 				
 <pre class="col6"><code>&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col6&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;col6&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;col6 grid2-col1&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;col6 grid2-col1&quot;&gt;...&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col3&quot;&gt;...&lt;/div&gt;
@@ -77,6 +76,9 @@
 				<ul class="col6">
 					<li><code>.container</code> is always full width</li>
 					<li><code>.row</code> maximum at 1000px, centered</li>
+					<li><code>.col*</code> is the number of columns an element is spanning within the grid</li>
+					<li><code>.grid2-col*</code> controls number of total columns an element is spanning within the optional grid</li>
+					<li>Columns within one <code>.row</code> always need to sum up to 12</li>
 				</ul>
 			</article>
 			
@@ -84,28 +86,50 @@
 	</div>
 	
 	<div class="container">
+		
+		<header class="row">
+			<h1 class="sectionTitle">The Grid</h1>
+		</header>
+		
+		<section class="row">
 			
-		<article id="theGrid">
+			<article class="col3 grid2-col1">
+				<h3>Grid 12</h3>
+				<p>The main fluid grid system with 12 flexible columns.</p>
+				<p>In use for viewport sizes <strong>768px and up</strong>.</p>
+			</article>
+			<article class="col3 grid2-col1">
+				<h3>Grid 2</h3>
+				<p>The optional fluid grid system with 2 columns.</p>
+				<p>In use for viewport sizes between <strong>480px and up</strong>.</p>
+			</article>
+			<article class="col6 grid2-col2">
+				<h3>Mix It</h3>
+				<p>The Grid 2 can be used as an addition to Grid 12. All columns of Grid 12 default to full width columns for viewport sizes under 768px. By using the grid2-col1 or grid-col2 classes you can further control the layout between 480px and 768px.</p>
+			</article>
+			
+		</section>
+		
+		<article id="theGrid12" class="theGrid">
+			<header class="row">
+				<h1 class="col12">The Grid 12</h1>
+				<p>This grid preview uses both, Grid 12 &amp; Grid 2. At a viewport size of 768px and down Grid 2 kicks in. Both grids become a 1 column layout for viewport sizes of under 480px. Resize your browser window and watch the columns, especially those with two classes.</p>
+			</header>
 			<div class="row">
-				<header class="col12">
-					<h1 class="sectionTitle">The Grid</h1>
-				</header>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
 			</div>
 			<div class="row">
-				<p class="col1">.col1</p>
-				<p class="col1">.col1</p>
-				<p class="col1">.col1</p>
-				<p class="col1">.col1</p>
-				<p class="col1">.col1</p>
-				<p class="col1">.col1</p>
-				<p class="col1">.col1</p>
-				<p class="col1">.col1</p>
-				<p class="col1">.col1</p>
-				<p class="col1">.col1</p>
-				<p class="col1">.col1</p>
-				<p class="col1">.col1</p>
-			</div>
-			<div class="row">
 				<p class="col2">.col2</p>
 				<p class="col2">.col2</p>
 				<p class="col2">.col2</p>
@@ -114,15 +138,15 @@
 				<p class="col2">.col2</p>
 			</div>
 			<div class="row">
-				<p class="col3">.col3</p>
-				<p class="col3">.col3</p>
-				<p class="col3">.col3</p>
-				<p class="col3">.col3</p>
+				<p class="col3 grid2-col1">.col3 &amp; .grid2-col1</p>
+				<p class="col3 grid2-col1">.col3 &amp; .grid2-col1</p>
+				<p class="col3 grid2-col1">.col3 &amp; .grid2-col1</p>
+				<p class="col3 grid2-col1">.col3 &amp; .grid2-col1</p>
 			</div>
 			<div class="row">
-				<p class="col4">.col4</p>
-				<p class="col4">.col4</p>
-				<p class="col4">.col4</p>
+				<p class="col4 grid2-col1">.col4 &amp; .grid2-col1</p>
+				<p class="col4 grid2-col1">.col4 &amp; .grid2-col1</p>
+				<p class="col4 grid2-col2">.col4 &amp; .grid2-col2</p>
 			</div>
 			<div class="row">
 				<p class="col1">.col1</p>
@@ -131,27 +155,35 @@
 				<p class="col1">.col1</p>
 			</div>
 			<div class="row">
-				<p class="col2">.col2</p>
-				<p class="col4">.col4</p>
-			</div>
-			<div class="row">
-				<p class="col6">.col6</p>
-				<p class="col6">.col6</p>
+				<p class="col6 grid2-col1">.col6 &amp; .grid2-col1</p>
+				<p class="col6 grid2-col1">.col6 &amp; .grid2-col1</p>
 			</div>
 			<div class="row">
 				<p class="col5">.col5</p>
 				<p class="col7">.col7</p>
 			</div>
 			<div class="row">
-				<p class="col6">.col6</p>
-			</div>
-			
-			<div class="row">
 				<p class="col12">.col12</p>
 			</div>
 		</article>
 		
+		<article id="theGrid2" class="theGrid">
+			<header class="row">
+				<h1 class="col12">The Grid 2</h1>
+				<p>Grid 2 could theoretically used standalone. For demonstrating purpose this grid preview maxes out at 768px but it's fluid until 1000px like Grid 12 by default.</p>
+			</header>
+			<div class="row">
+				<p class="grid2-col2">.grid2-col2</p>
+			</div>
+			
+			<div class="row">
+				<p class="grid2-col1">.grid2-col1</p>
+				<p class="grid2-col1">.grid2-col1</p>
+			</div>
+		</article>
+		
 	</div>
+	
 
 	<div class="container">
 		<div class="row">
