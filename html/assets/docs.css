@@ -29,8 +29,8 @@ h2 {
 	margin-bottom: 0em;
 }
 h3,
-article > header h1,
-aside > header h1 {
+article header h1,
+aside header h1 {
 	font-size: 1.5em; /* 24px */
 	line-height: 1.8333em; /* 44px */
 	margin-top: 0.9167em;
@@ -47,6 +47,10 @@ p, ul, ol, img, pre {
 	margin-top: 0;
 }
 
+li {
+	margin-bottom: 0.6875em;
+}
+
 a, a:visited { 
 	color: #b23834; 
 	text-decoration: none;
@@ -56,7 +60,7 @@ a, a:visited {
 	-ms-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
 }
-a:hover { color: #c63f3a; }
+a:hover, a:visited:hover { color: #c63f3a; }
 a:active { }
 
 strong {
@@ -75,6 +79,10 @@ ul.unstyled {
 	list-style: none;
 	padding-left: 0;
 }
+
+	ul.unstyled li {
+		margin-bottom: 0;
+	}
 
 .container { 
 	border-bottom: 1px solid #000; border-top: 1px solid rgba(255,255,255,.1);
@@ -149,7 +157,8 @@ body > .container:first-child {
 }
 
 header[role="banner"] h1,
-header[role="banner"] p {
+header[role="banner"] p,
+header[role="banner"] a {
 	color: #fff;
 	text-shadow: 0 -1px 0 #000;
 	line-height: 1.2em;
@@ -157,9 +166,14 @@ header[role="banner"] p {
 }
 
 header[role="banner"] a {
-	text-shadow: 0 1px 0 rgba(255,255,255,.3);
-	color: #842a27;
+	border-bottom: 1px dashed #fff;
+	border-bottom: 1px dashed rgba(255,255,255,.4);
 }
+
+	header[role="banner"] a:hover {
+		border-bottom: 1px solid #fff;
+		border-bottom: 1px solid rgba(255,255,255,.4);
+	}
 
 .sectionTitle {
 	border-bottom: 1px solid #4f9ec9;
@@ -171,8 +185,8 @@ header[role="banner"] a {
 	padding-bottom: 0.2em;
 }
 
-article > header h1,
-aside > header h1 {
+article header h1,
+aside header h1 {
 	border-bottom: 1px dashed #4f9ec9;
 	border-bottom: 1px dashed rgba(79, 158, 201, .5);
 	margin-bottom: 0.6111em;
@@ -195,11 +209,21 @@ pre,
 	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.1);
 	box-shadow: 0 1px 0 rgba(255,255,255,.1); }
 
-code {
-	color: #fff;
+code,
+pre .pln, code .pln {
+	color: #eee;
 	font-family: "Courier New", Courier, mono; }
 
+pre code { font-size: .9em; }
+
 .flexslider { padding: 0; }
+.flexslider li { margin-bottom: 0; }
+
+footer p { margin-bottom: 0; line-height: .9em; }
+footer small {
+	font-size: .7em;
+	
+}
 
 #assetdownload article h1 a {
 	font-size: .6em;

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>HS Responsive</title>
 	
 	<meta name="viewport" content="width=device-width">
 	
@@ -22,7 +22,7 @@
 			
 			<header role="banner" class="clearfix">
 				<h1 class="col4">HS Responsive</h1>
-				<p class="col8">Basic responsive web design framework &amp; templates for students of Medieninformatik at the <a href="http://www.hs-harz.de/">Hochschule Harz</a></p>
+				<p class="col8">Basic responsive web design framework &amp; templates for students of <a href="http://www.medieninformatik.de/">Medieninformatik</a> at the <a href="http://www.hs-harz.de/">Hochschule Harz</a></p>
 			</header>
 			
 		</div>
@@ -50,11 +50,11 @@
 		<div class="row">
 			<article class="col6">
 				<header><h1>Documentation</h1></header>
-				<p>All required documentation can be found on this page. It's itself build with the grid framework in use in the HTML/CSS template so it's a live example too.</p>
+				<p>All required documentation can be found on this page. It's itself build with the grid framework in use in the HTML/CSS template so it's a live example too. Inspect Element is your friend.</p>
 			</article>
 			<article class="col6">
 				<header><h1>Questions? Adventurous?</h1></header>
-				<p><a href="#">Send E-Mail</a> or fork this project <a href="https://github.com/kremalicious/medieninformatik">on github</a></p>
+				<p>Send <a href="mailto:dackermann@hs-harz.de">E-Mail to Daniel Ackermann</a> or fork this project <a href="https://github.com/kremalicious/medieninformatik">on github</a></p>
 			</article>
 		</div>
 	</div>
@@ -82,8 +82,8 @@
 &lt;/div&gt;</code></pre>
 							
 				<ul class="col5">
-					<li><code>.container</code> is always full width</li>
-					<li><code>.row</code> maximum at 1000px, centered</li>
+					<li><code>.container</code> is always full width of the window</li>
+					<li><code>.row</code> is full width too but with maximum at 1000px, gets centered within window</li>
 					<li><code>.col*</code> is the number of columns an element is spanning within the grid</li>
 					<li><code>.grid2-col*</code> controls number of total columns an element is spanning within the optional grid</li>
 					<li>Columns within one <code>.row</code> always need to sum up to 12</li>
@@ -113,7 +113,8 @@
 			</article>
 			<article class="col6 grid2-col2">
 				<header><h1>Mix It</h1></header>
-				<p>The Grid 2 can be used as an addition to Grid 12. All columns of Grid 12 default to full width columns for viewport sizes under 768px. By using the grid2-col1 or grid-col2 classes you can further control the layout between 480px and 768px.</p>
+				<p>All columns of Grid 12 default to full width columns in a 1 column layout for viewport sizes under 768px.</p>
+				<p>But the Grid 2 can be used as an addition to Grid 12: by using <code>grid2-col1</code> or <code>grid-col2</code> classes you can further control the layout between 480px and 768px.</p>
 			</article>
 			
 		</section>
@@ -205,7 +206,7 @@
 	<div class="container">
 		<div class="row">
 			<header class="col12">
-				<h1 class="sectionTitle">Embedded Media</h1>
+				<h1 class="sectionTitle">Responsive Media</h1>
 			</header>
 		</div>
 		<div class="row">
@@ -213,12 +214,12 @@
 			<article class="col12">
 				<ul class="unstyled">
 					<li class="col6">
-						<img src="http://placekitten.com/g/490/200" />
-						<p>Put a bird on it retro vinyl odd future, fap williamsburg banh mi freegan aesthetic mcsweeney's tofu hella leggings next level. Cardigan helvetica small batch, brooklyn bespoke stumptown fingerstache synth letterpress cray selvage. Shoreditch mcsweeney's flexitarian, narwhal mlkshk DIY bespoke squid leggings tattooed cosby sweater letterpress small batch retro.</p>
+						<img src="http://placekitten.com/g/500/200" width="500" height="200" />
+						<p>These are images which are bigger than the columns they're in. Using <code>max-width:100%</code> for all <code>img</code> elements makes sure they won't exceed the (flexible) width of the spanning column no matter how big they are.</p>
 					</li>
 					<li class="col6">
-						<img src="http://placekitten.com/490/200" />
-						<p>Tofu hoodie iphone cardigan readymade craft beer sartorial swag artisan williamsburg, pickled fingerstache chillwave tumblr mixtape. VHS wolf fixie portland blog skateboard. Banksy ethnic stumptown shoreditch +1, hoodie before they sold out yr polaroid dreamcatcher.</p>
+						<img src="http://placekitten.com/500/200" width="500" height="200" />
+						<p>Additionally images are always scaled proportionally by using <code>height:auto</code>.</p>
 					</li>
 				</ul>
 			</article>
@@ -237,47 +238,129 @@
 			<article class="col12">
 			
 				<div class="flexslider">
-					<ul class="slides">
+					<ul class="unstyled slides">
 						<li><img src="http://placekitten.com/1000/400" width="1000" height="400px" /></li>
-						<li><img src="http://placekitten.com/g/1000/400" width="1000" height="400px" /></li>
+						<li>
+							<img src="http://placekitten.com/g/1000/400" width="1000" height="400px" />
+							<p class="flex-caption">Caption is possible too</p>
+						</li>
 					</ul>
 				</div>
+				
+				<p><a href="http://flex.madebymufffin.com/">FlexSlider</a> is touch optimized so the slides can be moved with a buttery smooth, hardware accelerated swipe.</p>
 			
 			</article>
 			
 		</div>
-		<div class="row">
-			<aside class="col12">
-				<header><h1>Slider Markup</h1></header>
-	
+		
+		<aside>
+		
+			<div class="row">
+				<div class="col12">
+					<header><h1>Markup</h1></header>
+		
 <pre><code class="prettyprint lang-html">&lt;div class=&quot;flexslider&quot;&gt;
   &lt;ul class=&quot;slides&quot;&gt;
     &lt;li&gt;&lt;img src=&quot;http://placekitten.com/800/400&quot; width=&quot;800px&quot; height=&quot;400px&quot; /&gt;&lt;/li&gt;
     &lt;li&gt;&lt;img src=&quot;http://placekitten.com/800/400&quot; width=&quot;800px&quot; height=&quot;400px&quot; /&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col8">
+					<header><h1>Initiation</h1></header>
+					<p>This is the default FlexSlider call included in the <code>script.js</code> of the HTML/CSS template:</p>
+
+<pre><code class="prettyprint">$(window).load(function() {
+  $('.flexslider').flexslider({ // select all elements with class of flexslider
+    // apply the slider with options
+    animation: &quot;slide&quot;, 
+    slideshow: false
+  });
+});</code></pre>
+
+				</div>
+				<div class="col4">
+					<header><h1>Options</h1></header>
+					<p>The default and all possible options can be found on the <a href="http://flex.madebymufffin.com/">FlexSlider web site</a>.</p>
+
+				</div>
 				
-			</aside>
-		</div>
+			</div>
+			
+		</aside>
 	</div>
 	
 	<div class="container">
-		<div class="row">
 			
-			<div class="row">
-				<header class="col12">
-					<h1 class="sectionTitle">Links &amp; Literature</h1>
-				</header>
-			</div>
-		
+		<div class="row">
+			<header class="col12">
+				<h1 class="sectionTitle">Literature &amp; Links</h1>
+			</header>
 		</div>
+		
+		<div class="row">
+			<article class="col6">
+				<header><h1>Articles</h1></header>
+				<ul>
+					<li><a href="http://www.alistapart.com/articles/responsive-web-design/">Marcotte, Ethan: Responsive Web Design</a></li>
+					<li><a href="https://developer.mozilla.org/en/Mobile/Viewport_meta_tag">Mozilla Dev: Using the viewport meta tag to control layout on mobile browsers</a></li>
+					<li><a href="http://www.netmagazine.com/node/1437">Smith, Grace: Redesign your portfolio site in 10 easy steps</a></li>
+					<li><a href="http://elliotjaystocks.com/blog/a-better-photoshop-grid-for-responsive-web-design/">Stocks, Elliot Jay: A Better Photoshop Grid For Responsive Web Design</a></li>
+					<li><a href="http://paulirish.com/2012/box-sizing-border-box-ftw/">Irish, Paul: * { box-sizing: border-box } FTW</a></li>
+				</ul>
+			</article>
+			<article class="col6">
+				<header><h1>Books</h1></header>
+				<ul>
+					<li><a href="http://www.abookapart.com/products/complete-library">A Book Apart Library</a></li>
+					<li><a href="http://www.fivesimplesteps.com/products/a-practical-guide-to-designing-for-the-web">Boulton, Mark: A Practical Guide to Designing for the Web</a></li>
+					<li><a href="http://introducinghtml5.com/">Lawson, Bruce: Introducing HTML5</a></li>
+					<li><a href="http://www.fivesimplesteps.com/products/a-practical-guide-to-designing-the-invisible">Mills, Robert: A Practical Guide to Designing the Invisible</a></li>
+					<li><a href="http://www.zeldman.com/dwws/">Zeldman, Jeffrey: Designing with Web Standards: 3rd Edition</a></li>
+				</ul>
+			</article>
+		</div>
+		
+		<div class="row">
+			<article class="col4">
+				<header><h1>Responsive Examples</h1></header>
+				<ul>
+					<li><a href="http://bostonglobe.com">http://bostonglobe.com</a></li>
+					<li><a href="http://elliotjaystocks.com">http://elliotjaystocks.com</a></li>
+					<li><a href="http://ipp-halle.de">http://ipp-halle.de</a></li>
+					<li><a href="http://edenspiekermann.com">http://edenspiekermann.com</a></li>
+				</ul>
+			</article>
+			<article class="col4">
+				<header><h1>CSS Web Tools</h1></header>
+				<ul>
+					<li><a href="http://drewish.com/tools/vertical-rhythm">Verical Rhythm Tool</a></li>
+					<li><a href="http://www.colorzilla.com/gradient-editor/">Ultimate CSS Gradient Generator</a></li>
+					<li><a href="http://www.layerstyles.org/">Layerstyles</a></li>
+					<li><a href="http://prefixr.com/">Prefixr</a></li>
+				</ul>
+			</article>
+			<article class="col4">
+				<header><h1>Libraries</h1></header>
+				<ul>
+					<li><a href="http://www.modernizr.com/">Modernizr</a></li>
+					<li><a href="http://html5boilerplate.com/">HTML5Boilerplate</a></li>
+					<li><a href="http://flex.madebymufffin.com/">FlexSlider</a></li>
+				</ul>
+			</article>
+		</div>
+
 	</div>
 	
 	<div class="container">
 		<div class="row">
 			
 			<footer class="col12">
-				<small>© Do you need some text for your website or whatever? *sigh* Okay…</small>
+				<p><small>Created and maintained for <a href="http://www.hs-harz.de/">Hochschule Harz</a> / <a href="http://www.medieninformatik.de/">Medieninformatik</a> by Dipl. Des. Daniel Ackermann &amp; freelance web designer <a href="http://mkretschmann.com">Matthias Kretschmann</a></small></p>
+				<p><small>Placeholder images by <a href="http://placekitten.com/">{placekitten}</a></small></p>
 			</footer>
 		
 		</div>
