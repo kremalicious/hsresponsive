@@ -1,10 +1,29 @@
+/*
+ * HS Responsive
+ * Template CSS
+ * http://kremalicious.github.com/hsresponsive
+ * 
+ * v1.0
+ *
+ * Copyright 2011, Daniel Ackermann / Matthias Kretschmann
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+
+/* debug colors */
+
+/* .container { border-bottom: 1px solid rgba(0,0,0,.4); border-top: 1px solid rgba(0,0,0,.4); }
+.row { background: rgba(255,255,255,.5); }
+.col1, .col2, .col3, .col4, .col5, .col6 { background: rgba(255,255,255,.9); } */
+
 
 /*  ============================================================== */
 /*  Base (320px and up) */
 /*  ============================================================== */
 
 body {
-	font: 16px/22px Georgia, "Times New Roman", Times, serif;
+	font: 16px/22px Georgia, 'Times New Roman', Times, serif;
 	color: #888;
 	text-shadow: 0 1px 0 #fff;
 	padding-top: 1%;
@@ -56,9 +75,6 @@ img {
 	border-radius: 3px;
 	box-shadow: 0 1px 4px rgba(0,0,0,.5);
 }
-
-.flexslider { margin-bottom: 30px; }
-.flexslider img { margin-bottom: 0; }
 
 ul.unstyled {
 	list-style: none;
@@ -120,9 +136,9 @@ footer {
 }
 
 
-/*   1020px and up */
+/*   1000px and up */
 /*  ============================================================== */
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1000px) {
 
 
 }

@@ -72,9 +72,6 @@ img {
 	box-shadow: 0 1px 4px rgba(0,0,0,.5);
 }
 
-.flexslider { margin-bottom: 30px; }
-.flexslider img { margin-bottom: 0; }
-
 ul.unstyled {
 	list-style: none;
 	padding-left: 0;
@@ -254,6 +251,27 @@ footer small {
 		background: rgba(255,255,255,.2);
 		box-shadow: 0 0 7px rgba(79, 158, 201, 1);
 	}
+
+/*
+ * jQuery FlexSlider v1.8
+ * http://flex.madebymufffin.com
+ */
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+.flexslider {width: 100%; margin: 0; padding: 0;}
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+.flex-caption { width: 100%; }
+
+.flexslider { margin-bottom: 30px; }
+.flexslider img { margin-bottom: 0; }
 
 @media only screen and (min-width: 480px) { 
 	

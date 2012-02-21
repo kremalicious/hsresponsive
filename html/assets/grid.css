@@ -1,8 +1,14 @@
-
-/*debug colors*/
-.container { border-bottom: 1px solid rgba(255,255,255,.1); border-top: 1px solid rgba(255,255,255,.1); }
-.row,
-.col1, .col2, .col3, .col4, .col5, .col6 { background: rgba(255,255,255,.05); }
+/*
+ * HS Responsive
+ * The Grid Framework
+ * http://kremalicious.github.com/hsresponsive
+ * 
+ * v1.0
+ *
+ * Copyright 2011, Daniel Ackermann / Matthias Kretschmann
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
 
 
 /* ============================================================== */
@@ -19,53 +25,27 @@
 /*  ============================================================== */
 
 .container {
-	padding: 0 2%; 		/*immer 20px/1000px Abstand zum Inhalt */
+	padding: 0 2%; 		/* always 20px/1000px padding on left & right */
 	width: 100%;
-	margin: 1% auto;
-}
+	margin: 1% auto; }
 
 .col1, .col2, .col3, .col4, .col5, .col6 {
 	width: 100%;
-	margin-left: 0;
-}
-
+	margin-left: 0; }
 
 /* clear trick */
-.container, .row { *zoom: 1; }
-.container:before, .row:before, .container:after, .row:after {
-  display: table;
-  content: ""; }
+.container:before, .row:before, 
+.container:after, .row:after { display: table; content: ""; }
 .container:after, .row:after { clear: both; }
+.container, .row { *zoom: 1; }
 
 /* Responsive Media */
 img, svg, video, audio, embed, object {
-	max-width: 100%;	/* nie breiter als umschließende Spalte */
-	height: auto;		/* ermöglicht proportionale Skalierung */
-	margin: 0 auto;		/* immer innerhalb der Spalte zentrieren */
-	display: block;		/* benötigt damit Zentrierung funktioniert */
+	max-width: 100%;	/* never wider as containing column */
+	height: auto;		/* proportional scaling */
+	margin: 0 auto;		/* center in column */
+	display: block;		/* needed for centering */
 }
-
-/*
- * jQuery FlexSlider v1.8
- * http://flex.madebymufffin.com
- *
- * Copyright 2011, Tyler Smith
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
-.flex-container a:active,
-.flexslider a:active {outline: none;}
-.slides,
-.flex-control-nav,
-.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
-.flexslider {width: 100%; margin: 0; padding: 0;}
-.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {max-width: 100%; display: block;}
-.flex-pauseplay span {text-transform: capitalize;}
-.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
-html[xmlns] .slides {display: block;} 
-* html .slides {height: 1%;}
-.flex-caption { width: 100%; }
 
 
 /*   480px and up */
@@ -76,10 +56,14 @@ html[xmlns] .slides {display: block;}
 		float: left;
 		margin-left: 2%; }
 	
-	.grid2-col1:first-child, .grid2-col1:nth-child(2n+1), .grid2-col2  { margin-left: 0; }
+	.grid2-col1:first-child, 
+	.grid2-col1:nth-child(2n+1), 
+	.grid2-col2  { margin-left: 0; }
 	
 	.grid2-col1 { width: 49%; }		/* 245px/500px */
-	.grid2-col2 { width: 100%; margin-left: 0; }
+	.grid2-col2 { 
+		width: 100%; 
+		margin-left: 0; }
 	
 }
 
@@ -89,21 +73,30 @@ html[xmlns] .slides {display: block;}
 @media only screen and (min-width: 768px) {
 	
 	.row {
-	    max-width: 1000px;		/* Fluid bis maximal 1000px */
+	    max-width: 1000px;		/* fluid til 1000px max */
 	    margin: 0 auto;
 	    padding-left: 0;
 	    padding-right: 0;
 	}
 	
-	.col1, .col2, .col3, .col4, .col5, .col6,
-	.grid2-col1:first-child, .grid2-col1:nth-child(1n+1), .grid2-col2 {
+	.col1, 
+	.col2, 
+	.col3, 
+	.col4, 
+	.col5, 
+	.col6,
+	.grid2-col1:first-child, 
+	.grid2-col1:nth-child(1n+1), 
+	.grid2-col2 {
 		float: left;
-		margin-left: 2%;
-	}
+		margin-left: 2%; }
 	
-	.col1:first-child, .col2:first-child, .col3:first-child, .col4:first-child, .col5:first-child, .col6 {
-	    margin-left: 0;
-	}
+	.col1:first-child, 
+	.col2:first-child, 
+	.col3:first-child, 
+	.col4:first-child, 
+	.col5:first-child, 
+	.col6 { margin-left: 0; }
 
 	.col1 { width: 15%; }		/* 150px/1000px */
 	.col2 { width: 32%; }		/* 320px/1000px */

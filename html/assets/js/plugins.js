@@ -1,4 +1,15 @@
 /*
+ * HS Responsive
+ * JS Plugins
+ * http://kremalicious.github.com/hsresponsive
+
+ * Copyright 2011, Daniel Ackermann / Matthias Kretschmann
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+
+/*
  * jQuery FlexSlider v1.8
  * http://flex.madebymufffin.com
  * Copyright 2011, Tyler Smith
