@@ -2,7 +2,7 @@
 /*debug colors*/
 .container { border-bottom: 1px solid rgba(255,255,255,.1); border-top: 1px solid rgba(255,255,255,.1); }
 .row,
-.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 { background: rgba(255,255,255,.05); }
+.col1, .col2, .col3, .col4, .col5, .col6 { background: rgba(255,255,255,.05); }
 
 
 /* ============================================================== */
@@ -24,7 +24,7 @@
 	margin: 1% auto;
 }
 
-.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+.col1, .col2, .col3, .col4, .col5, .col6 {
 	width: 100%;
 	margin-left: 0;
 }
@@ -53,26 +53,18 @@ img, svg, video, audio, embed, object {
  * Free to use under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
  */
- 
-/* Browser Resets */
 .flex-container a:active,
 .flexslider a:active {outline: none;}
 .slides,
 .flex-control-nav,
 .flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
-
-/* FlexSlider Necessary Styles
-*********************************/ 
 .flexslider {width: 100%; margin: 0; padding: 0;}
 .flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {max-width: 100%; display: block;}
 .flex-pauseplay span {text-transform: capitalize;}
-
-/* Clearfix for the .slides element */
 .slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
 html[xmlns] .slides {display: block;} 
 * html .slides {height: 1%;}
-
 .flex-caption { width: 100%; }
 
 
@@ -103,36 +95,27 @@ html[xmlns] .slides {display: block;}
 	    padding-right: 0;
 	}
 	
-	.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12,
-	.grid2-col1:first-child, .grid2-col1:nth-child(2n+1), .grid2-col2 {
+	.col1, .col2, .col3, .col4, .col5, .col6,
+	.grid2-col1:first-child, .grid2-col1:nth-child(1n+1), .grid2-col2 {
 		float: left;
 		margin-left: 2%;
 	}
 	
-	.col1:first-child, .col2:first-child, .col3:first-child, .col4:first-child, .col5:first-child, .col6:first-child, .col7:first-child, .col8:first-child, .col9:first-child, .col10:first-child, .col11:first-child, .col12 {
+	.col1:first-child, .col2:first-child, .col3:first-child, .col4:first-child, .col5:first-child, .col6 {
 	    margin-left: 0;
 	}
-	
-	
-	
-	.col1 { width: 6.5%; }		/* 65px/1000px */
-	.col2 { width: 15%; }		/* 150px/1000px */
-	.col3 { width: 23.5%; }		/* 235px/1000px */
-	.col4 { width: 32.0%; }		/* 320px/1000px */
-	.col5 { width: 40.5%; }		/* 405px/1000px */
-	.col6 { width: 49.0%; }		/* 490px/1000px */
-	.col7 { width: 57.5%; }		/* 575px/1000px */
-	.col8 { width: 66.0%; }		/* 660px/1000px */
-	.col9 { width: 74.5%; }		/* 745px/1000px */
-	.col10 { width: 83%; }		/* 830px/1000px */
-	.col11 { width: 91.5%; }	/* 915px/1000px */
-	.col12 { width: 100%; }
+
+	.col1 { width: 15%; }		/* 150px/1000px */
+	.col2 { width: 32%; }		/* 320px/1000px */
+	.col3 { width: 49%; }		/* 490px/1000px */
+	.col4 { width: 66%; }		/* 660px/1000px */
+	.col5 { width: 83%; }		/* 830px/1000px */
+	.col6 { width: 100%; }		/* 1000px/1000px */
 	
 }
 
 
 /*   1000px and up  */
-/*   12 Column Grid  */
 /*  ============================================================== */
 @media only screen and (min-width: 1000px) {
 	
