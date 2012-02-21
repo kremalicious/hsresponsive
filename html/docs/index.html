@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HS Responsive</title>
+	
+	<meta name="viewport" content="width=device-width">
+	
+	<link rel="stylesheet" href="../assets/h5bp.css">
+	<link rel="stylesheet" href="../assets/grid.css">
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../assets/flexslider.css">
+	<link rel="stylesheet" href="assets/google-code-prettify/prettify.css">
+	<link rel="stylesheet" href="assets/docs.css">
+	
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			
+			<header role="banner" class="clearfix">
+				<h1 class="col2">HS Responsive</h1>
+				<p class="col4">Basic responsive web design framework &amp; templates for students of <a href="http://www.medieninformatik.de/">Medieninformatik</a> at the <a href="http://www.hs-harz.de/">Hochschule Harz</a></p>
+			</header>
+			
+		</div>
+	</div>
+	
+	<div class="container" id="assetdownload">
+		<div class="row">
+			<header class="col6">
+				<h1 class="sectionTitle">Quick Start</h1>
+			</header>
+		</div>
+		<div class="row">
+			<article class="col3">
+				<header><h1>HTML/CSS Template <a href="template.html">View</a></h1></header>
+				<p>Includes small website template with basic markup, layout &amp; styles</p>
+				<p><a class="button" href="#">Download HTML/CSS files</a></p>
+				<p><small><em>CSS: only <code>h5bp.css</code> &amp; <code>grid.css</code> are needed for the framework. The content of <code>style.css</code> can be deleted if you want to start real fresh</em></small></p>
+			</article>
+			<article class="col3">
+				<header><h1>Photoshop Templates</h1></header>
+				<p>Includes 2 grid files for fixed sizes of 1000px (6 Columns) &amp; 500px (2 Columns)</p>
+				<p><a class="button" href="#">Download PSD files</a></p>
+			</article>
+		</div>
+		<div class="row">
+			<article class="col3">
+				<header><h1>Documentation</h1></header>
+				<p>All required documentation can be found on this page. It's itself build with the grid framework in use in the HTML/CSS template so it's a live example too. Inspect Element is your friend.</p>
+			</article>
+			<article class="col3">
+				<header><h1>Questions? Adventurous?</h1></header>
+				<p>Send <a href="mailto:dackermann@hs-harz.de">E-Mail to Daniel Ackermann</a> or fork this project <a href="https://github.com/kremalicious/medieninformatik">on github</a></p>
+			</article>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<header class="col6">
+				<h1 class="sectionTitle">Markup</h1>
+			</header>
+		</div>
+		<div class="row">
+			
+			<article>
+				
+<pre class="col4"><code class="prettyprint lang-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col6 grid2-col1&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;col6 grid2-col1&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col3&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;col3&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;col3&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+							
+				<ul class="col2">
+					<li><code>.container</code> is always full width of the window</li>
+					<li><code>.row</code> is full width too but with maximum at 1000px, gets centered within window</li>
+					<li><code>.col*</code> is the number of columns an element is spanning within the grid</li>
+					<li><code>.grid2-col*</code> controls number of total columns an element is spanning within the optional grid</li>
+					<li>Columns within one <code>.row</code> always need to sum up to 6 (Grid 6) or 2 (Grid 2)</li>
+				</ul>
+			</article>
+			
+		</div>
+	</div>
+	
+	<div class="container">
+		
+		<header class="row">
+			<h1 class="sectionTitle">The Grid</h1>
+		</header>
+		
+		<section class="row">
+			
+			<article class="col1 grid2-col1">
+				<header><h1>Grid 6</h1></header>
+				<p>The main fluid grid system with 12 flexible columns.</p>
+				<p>In use for viewport sizes <strong>768px and up</strong>.</p>
+			</article>
+			<article class="col1 grid2-col1">
+				<header><h1>Grid 2</h1></header>
+				<p>The optional fluid grid system with 2 columns.</p>
+				<p>In use for viewport sizes between <strong>480px and 768px</strong>.</p>
+			</article>
+			<article class="col4 grid2-col2">
+				<header><h1>Mix It</h1></header>
+				<p>All columns of Grid 6 default to full width columns in a 1 column layout for viewport sizes under 768px.</p>
+				<p>But the Grid 2 can be used as an addition to Grid 6: by using <code>grid2-col1</code> or <code>grid-col2</code> classes you can further control the layout between 480px and 768px.</p>
+			</article>
+			
+		</section>
+		
+		<article id="theGrid6" class="theGrid">
+			<header class="row">
+				<h1 class="col6">The Grid 6</h1>
+				<p>This grid preview uses both, Grid 6 &amp; Grid 2 (just like the above text blocks). At a viewport size of 768px and down Grid 2 kicks in. Both grids become a 1 column layout for viewport sizes of under 480px.</p>
+				<p>Resize your browser window and watch the columns, especially those with two classes.</p>
+			</header>
+			<div class="row">
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+				<p class="col1">.col1</p>
+			</div>
+			<div class="row">
+				<p class="col2">.col2</p>
+				<p class="col2">.col2</p>
+				<p class="col2">.col2</p>
+			</div>
+			<div class="row">
+				<p class="col3 grid2-col1">.col3 &amp; .grid2-col1</p>
+				<p class="col3 grid2-col1">.col3 &amp; .grid2-col1</p>
+			</div>
+			<div class="row">
+				<p class="col4 grid2-col1">.col4 &amp; .grid2-col1</p>
+				<p class="col2 grid2-col1">.col2 &amp; .grid2-col1</p>
+			</div>
+			<div class="row">
+				<p class="col1">.col1</p>
+				<p class="col5">.col5</p>
+			</div>
+			<div class="row">
+				<p class="col3 grid2-col1">.col3 &amp; .grid2-col1</p>
+				<p class="col3 grid2-col1">.col3 &amp; .grid2-col1</p>
+			</div>
+			<div class="row">
+				<p class="col6">.col6</p>
+			</div>
+		</article>
+		
+		<article id="theGrid2" class="theGrid">
+			<header class="row">
+				<h1 class="col6">The Grid 2</h1>
+				<p>Grid 2 could theoretically used standalone. For demonstrating purpose this grid preview maxes out at 768px but it's fluid until 1000px like Grid 6 by default.</p>
+			</header>
+			<div class="row">
+				<p class="grid2-col2">.grid2-col2</p>
+			</div>
+			
+			<div class="row">
+				<p class="grid2-col1">.grid2-col1</p>
+				<p class="grid2-col1">.grid2-col1</p>
+			</div>
+		</article>
+		
+		<aside>
+			
+			<header class="row">
+				<h1 class="col6">Natural Box Layout Model</h1>
+				<p>All elements have <code>box-sizing:border-box</code> applied to them in the grid css. This way padding can be applied to all columns/elements without affecting the width or height of a column (or any element).</p>
+			</header>
+		</aside>
+		
+	</div>
+	
+
+	<div class="container">
+		<div class="row">
+			<header class="col6">
+				<h1 class="sectionTitle">Responsive Media</h1>
+			</header>
+		</div>
+		<div class="row">
+			
+			<article class="col6">
+				<ul class="unstyled">
+					<li class="col3">
+						<img src="http://placekitten.com/g/500/200" width="500" height="200" />
+						<p>These are images which are bigger than the columns they're in. Using <code>max-width:100%</code> for all <code>img</code> elements makes sure they won't exceed the (flexible) width of the spanning column no matter how big they are.</p>
+					</li>
+					<li class="col3">
+						<img src="http://placekitten.com/500/200" width="500" height="200" />
+						<p>Additionally images are always scaled proportionally by using <code>height:auto</code>.</p>
+					</li>
+				</ul>
+			</article>
+			
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<header class="col6">
+				<h1 class="sectionTitle">Responsive &amp; Touch Enabled Image Slider</h1>
+			</header>
+		</div>
+		<div class="row">
+			
+			<article class="col6">
+			
+				<div class="flexslider">
+					<ul class="unstyled slides">
+						<li><img src="http://placekitten.com/1000/400" width="1000" height="400px" /></li>
+						<li>
+							<img src="http://placekitten.com/g/1000/400" width="1000" height="400px" />
+							<p class="flex-caption">Caption is possible too</p>
+						</li>
+					</ul>
+				</div>
+				
+				<p><a href="http://flex.madebymufffin.com/">FlexSlider</a> is touch optimized so the slides can be moved with a buttery smooth, hardware accelerated swipe.</p>
+			
+			</article>
+			
+		</div>
+		
+		<aside>
+		
+			<div class="row">
+				<div class="col6">
+					<header><h1>Markup</h1></header>
+		
+<pre><code class="prettyprint lang-html">&lt;div class=&quot;flexslider&quot;&gt;
+  &lt;ul class=&quot;slides&quot;&gt;
+    &lt;li&gt;&lt;img src=&quot;http://placekitten.com/800/400&quot; width=&quot;800px&quot; height=&quot;400px&quot; /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src=&quot;http://placekitten.com/800/400&quot; width=&quot;800px&quot; height=&quot;400px&quot; /&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col4">
+					<header><h1>Initiation</h1></header>
+					<p>This is the default FlexSlider call included in the <code>script.js</code> of the HTML/CSS template:</p>
+
+<pre><code class="prettyprint">$(window).load(function() {
+  $('.flexslider').flexslider({ // select all elements with class of flexslider
+    // apply the slider with options
+    animation: &quot;slide&quot;, 
+    slideshow: false
+  });
+});</code></pre>
+
+				</div>
+				<div class="col2">
+					<header><h1>Options</h1></header>
+					<p>The default and all possible options can be found on the <a href="http://flex.madebymufffin.com/">FlexSlider web site</a>.</p>
+
+				</div>
+				
+			</div>
+			
+		</aside>
+	</div>
+	
+	<div class="container">
+			
+		<div class="row">
+			<header class="col6">
+				<h1 class="sectionTitle">Literature &amp; Links</h1>
+			</header>
+		</div>
+		
+		<div class="row">
+			<article class="col3">
+				<header><h1>Articles</h1></header>
+				<ul>
+					<li><a href="http://www.alistapart.com/articles/responsive-web-design/">Marcotte, Ethan: Responsive Web Design</a></li>
+					<li><a href="https://developer.mozilla.org/en/Mobile/Viewport_meta_tag">Mozilla Dev: Using the viewport meta tag to control layout on mobile browsers</a></li>
+					<li><a href="http://www.netmagazine.com/node/1437">Smith, Grace: Redesign your portfolio site in 10 easy steps</a></li>
+					<li><a href="http://elliotjaystocks.com/blog/a-better-photoshop-grid-for-responsive-web-design/">Stocks, Elliot Jay: A Better Photoshop Grid For Responsive Web Design</a></li>
+					<li><a href="http://paulirish.com/2012/box-sizing-border-box-ftw/">Irish, Paul: * { box-sizing: border-box } FTW</a></li>
+				</ul>
+			</article>
+			<article class="col3">
+				<header><h1>Books</h1></header>
+				<ul>
+					<li><a href="http://www.abookapart.com/products/complete-library">A Book Apart Library</a></li>
+					<li><a href="http://www.fivesimplesteps.com/products/a-practical-guide-to-designing-for-the-web">Boulton, Mark: A Practical Guide to Designing for the Web</a></li>
+					<li><a href="http://introducinghtml5.com/">Lawson, Bruce: Introducing HTML5</a></li>
+					<li><a href="http://www.fivesimplesteps.com/products/a-practical-guide-to-designing-the-invisible">Mills, Robert: A Practical Guide to Designing the Invisible</a></li>
+					<li><a href="http://www.zeldman.com/dwws/">Zeldman, Jeffrey: Designing with Web Standards: 3rd Edition</a></li>
+				</ul>
+			</article>
+		</div>
+		
+		<div class="row">
+			<article class="col2">
+				<header><h1>Responsive Examples</h1></header>
+				<ul>
+					<li><a href="http://bostonglobe.com">http://bostonglobe.com</a></li>
+					<li><a href="http://elliotjaystocks.com">http://elliotjaystocks.com</a></li>
+					<li><a href="http://ipp-halle.de">http://ipp-halle.de</a></li>
+					<li><a href="http://edenspiekermann.com">http://edenspiekermann.com</a></li>
+				</ul>
+			</article>
+			<article class="col2">
+				<header><h1>CSS Web Tools</h1></header>
+				<ul>
+					<li><a href="http://drewish.com/tools/vertical-rhythm">Verical Rhythm Tool</a></li>
+					<li><a href="http://www.colorzilla.com/gradient-editor/">Ultimate CSS Gradient Generator</a></li>
+					<li><a href="http://www.layerstyles.org/">Layerstyles</a></li>
+					<li><a href="http://prefixr.com/">Prefixr</a></li>
+				</ul>
+			</article>
+			<article class="col2">
+				<header><h1>Libraries</h1></header>
+				<ul>
+					<li><a href="http://www.modernizr.com/">Modernizr</a></li>
+					<li><a href="http://html5boilerplate.com/">HTML5Boilerplate</a></li>
+					<li><a href="http://flex.madebymufffin.com/">FlexSlider</a></li>
+				</ul>
+			</article>
+		</div>
+
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			
+			<footer class="col6">
+				<p><small>Created and maintained for <a href="http://www.hs-harz.de/">Hochschule Harz</a> / <a href="http://www.medieninformatik.de/">Medieninformatik</a> by Dipl. Des. Daniel Ackermann &amp; freelance web designer <a href="http://mkretschmann.com">Matthias Kretschmann</a></small></p>
+				<p><small>Placeholder images by <a href="http://placekitten.com/">{placekitten}</a> | Grid 6 inspired by <a href="http://elliotjaystocks.com/blog/a-better-photoshop-grid-for-responsive-web-design/">Elliot Jay Stocks</a></small></p>
+			</footer>
+		
+		</div>
+	</div>
+		
+	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../assets/js/libs/jquery.min.js"><\/script>')</script>
+	
+	<script src="assets/docs.js"></script>
+		
+</body>
+</html>
