@@ -75,23 +75,23 @@ footer {
 	border-top: 1px solid #ccc;
 }
 
-header[role="banner"] {
+#banner {
 	margin-bottom: 1em;
 	padding-bottom: 1em;
 	border-bottom: 1px solid #ccc;
 }
 
-header[role="banner"] h1 {
+#banner h1 {
 	margin-top: 0;
 	line-height: 1em;
 }
 
-header[role="banner"] p {
+#banner p {
 	margin-bottom: 0;
 	line-height: 1em;
 }
 
-article[role="main"] aside {
+#main aside {
 	padding-top: 1em;
 	border-top: 1px solid #ccc;
 }
