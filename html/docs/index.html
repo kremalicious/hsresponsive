@@ -15,7 +15,8 @@
 	<link rel="stylesheet" href="assets/docs.css">
 	
 	<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="../assets/js/libs/html5.min.js"></script>		<!-- HTML5 polyfill -->
+		<script src="../assets/js/libs/respond.min.js"></script>	<!-- Media Queries polyfill -->
 	<![endif]-->
 	
 </head>
@@ -40,23 +41,43 @@
 		</div>
 		<div class="row">
 			<article class="col3">
-				<header><h1>HTML/CSS Template <a href="template.html">View</a></h1></header>
+				<header><h1>HTML/CSS Template <a href="../index.html">View</a></h1></header>
 				<p>Includes small website template with basic markup, layout &amp; styles</p>
 				<p><a class="button" href="#">Download HTML/CSS files</a></p>
-				<p><small><em>CSS: only <code>h5bp.css</code> &amp; <code>grid.css</code> are needed for the framework. The content of <code>style.css</code> can be deleted if you want to start real fresh</em></small></p>
+				<h3>CSS</h3>
+				<ul>
+					<li><code>h5bp.css</code>: normalization of styles across browsers and handy defaults. See <a href="http://html5boilerplate.com/docs/css/">H5BP docs</a> for more info on that</li>
+					<li><code>grid.css</code>: the grid framework</li>
+					<li><code>style.css</code>: your own styles</li>
+				</ul>
+				<p><small><em><code>h5bp.css</code> &amp; <code>grid.css</code> are needed. The content of <code>style.css</code> can be deleted if you want to start real fresh</em></small></p>
+				<h3>JS/jQuery</h3>
+				<ul>
+					<li><code>plugins.js</code>: put all jQuery plugins you want to use in here</li>
+					<li><code>script.js</code>: write your own js/jQuery code in here like initializing a jQuery plugin</li>
+				</ul>
+				<p><small><em>Link to jQuery and these files at the end of your document for faster page loading. This is commented out in the template so it isn't active by default.</em></small></p>
 			</article>
 			<article class="col3">
-				<header><h1>Photoshop Templates</h1></header>
-				<p>Includes 2 grid files for fixed sizes of 1000px (6 Columns) &amp; 500px (2 Columns)</p>
-				<p><a class="button" href="#">Download PSD files</a></p>
+				<header><h1>Sketch &amp; Photoshop Templates</h1></header>
+				<p>Includes 1 psd file and a sketch sheet with 3 views side by side.</p>
+				<p><a class="button" href="#">Download sketch &amp; psd files</a></p>
+				<ul>
+					<li>2 grids for fixed sizes of 1000px (6 Columns), 500px (2 Columns) &amp; the mobile view (1 column)</li>
+				</ul>
+				
 			</article>
 		</div>
 		<div class="row">
-			<article class="col3">
+			<article class="col2">
 				<header><h1>Documentation</h1></header>
 				<p>All required documentation can be found on this page. It's itself build with the grid framework in use in the HTML/CSS template so it's a live example too. Inspect Element is your friend.</p>
 			</article>
-			<article class="col3">
+			<article class="col2">
+				<header><h1>Browser Support</h1></header>
+				<p>All modern browsers including but not limited to Chrome, Firefox, Safari, Opera and IE8+. IE8 get's a polyfill for <a href="http://code.google.com/p/html5shiv/">HTML5</a> &amp; <a href="https://github.com/scottjehl/Respond">Media Queries</a></p>
+			</article>
+			<article class="col2">
 				<header><h1>Questions? Adventurous?</h1></header>
 				<p>Send <a href="mailto:dackermann@hs-harz.de">E-Mail to Daniel Ackermann</a> or fork this project <a href="https://github.com/kremalicious/medieninformatik">on github</a></p>
 			</article>
@@ -200,12 +221,12 @@
 			<article class="col6">
 				<ul class="unstyled">
 					<li class="col3">
-						<img src="http://placekitten.com/g/500/200" width="500" height="200" />
+						<img src="http://placekitten.com/g/500/200" />
 						<p>These are images which are bigger than the columns they're in. Using <code>max-width:100%</code> for all <code>img</code> elements makes sure they won't exceed the (flexible) width of the spanning column no matter how big they are.</p>
 					</li>
 					<li class="col3">
-						<img src="http://placekitten.com/500/200" width="500" height="200" />
-						<p>Additionally images are always scaled proportionally by using <code>height:auto</code>.</p>
+						<img src="http://placekitten.com/500/200" />
+						<p>Additionally images are always scaled proportionally by using <code>height:auto</code> even if they have width/height attributes in the <code>img</code> tag (doesn't work in IE8).</p>
 					</li>
 				</ul>
 			</article>
@@ -225,9 +246,9 @@
 			
 				<div class="flexslider">
 					<ul class="unstyled slides">
-						<li><img src="http://placekitten.com/1000/400" width="1000" height="400px" /></li>
+						<li><img src="http://placekitten.com/1000/400" /></li>
 						<li>
-							<img src="http://placekitten.com/g/1000/400" width="1000" height="400px" />
+							<img src="http://placekitten.com/g/1000/400" />
 							<p class="flex-caption">Caption is possible too</p>
 						</li>
 					</ul>
@@ -247,8 +268,8 @@
 		
 <pre><code class="prettyprint lang-html">&lt;div class=&quot;flexslider&quot;&gt;
   &lt;ul class=&quot;slides&quot;&gt;
-    &lt;li&gt;&lt;img src=&quot;http://placekitten.com/800/400&quot; width=&quot;800px&quot; height=&quot;400px&quot; /&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;img src=&quot;http://placekitten.com/800/400&quot; width=&quot;800px&quot; height=&quot;400px&quot; /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src=&quot;http://placekitten.com/800/400&quot; /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src=&quot;http://placekitten.com/800/400&quot; /&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
 					
@@ -296,6 +317,7 @@
 					<li><a href="http://www.netmagazine.com/node/1437">Smith, Grace: Redesign your portfolio site in 10 easy steps</a></li>
 					<li><a href="http://elliotjaystocks.com/blog/a-better-photoshop-grid-for-responsive-web-design/">Stocks, Elliot Jay: A Better Photoshop Grid For Responsive Web Design</a></li>
 					<li><a href="http://paulirish.com/2012/box-sizing-border-box-ftw/">Irish, Paul: * { box-sizing: border-box } FTW</a></li>
+					<li><a href="http://www.zeldman.com/2011/12/29/state-of-the-web-of-apps-devices-and-breakpoints/">Zeldman, Jeffrey: State Of The Web: Of Apps, Devices, And Breakpoints</a></li>
 				</ul>
 			</article>
 			<article class="col3">
@@ -314,10 +336,11 @@
 			<article class="col2">
 				<header><h1>Responsive Examples</h1></header>
 				<ul>
-					<li><a href="http://bostonglobe.com">http://bostonglobe.com</a></li>
-					<li><a href="http://elliotjaystocks.com">http://elliotjaystocks.com</a></li>
-					<li><a href="http://ipp-halle.de">http://ipp-halle.de</a></li>
-					<li><a href="http://edenspiekermann.com">http://edenspiekermann.com</a></li>
+					<li><a href="http://bostonglobe.com">bostonglobe.com</a></li>
+					<li><a href="http://elliotjaystocks.com">elliotjaystocks.com</a></li>
+					<li><a href="http://ipp-halle.de">ipp-halle.de</a></li>
+					<li><a href="http://edenspiekermann.com">edenspiekermann.com</a></li>
+					<li><a href="http://www.starbucks.com">starbucks.com</a></li>
 				</ul>
 			</article>
 			<article class="col2">

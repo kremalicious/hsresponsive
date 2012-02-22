@@ -36,6 +36,7 @@ aside header h1 {
 	margin-top: 0.9167em;
 	margin-bottom: 0em;
 }
+
 h4 { }
 h5 { }
 h6 { }
@@ -217,10 +218,7 @@ pre code { font-size: .9em; }
 .flexslider li { margin-bottom: 0; }
 
 footer p { margin-bottom: 0; line-height: .9em; }
-footer small {
-	font-size: .7em;
-	
-}
+footer small { font-size: .7em; }
 
 #assetdownload article h1 a {
 	font-size: .6em;
@@ -233,6 +231,8 @@ footer small {
 	text-align: center;
 	padding: .6em 0;
 }
+
+#assetdownload h3 { color: #ccc; }
 
 .theGrid p[class*="col"] {
 	background: #ccc;
@@ -293,7 +293,7 @@ html[xmlns] .slides {display: block;}
 		padding-top: 0;
 	}
 	
-	body > .container:nth-child(2) {
+	#assetdownload {
 		padding-top: 70px;
 	}
 	
