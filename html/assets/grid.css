@@ -68,6 +68,16 @@ img, svg, video, audio, embed, object {
 		width: 100%; 
 		margin-left: 0; }
 	
+	/* ensures empty columns won't collapse */
+	.col1, 
+	.col2, 
+	.col3, 
+	.col4, 
+	.col5, 
+	.col6,
+	.grid2-col2,
+	.grid2-col1 { min-height: 1px; }
+	
 }
 
 
